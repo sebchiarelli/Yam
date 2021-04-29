@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Message from './components/message';
-import Dès from './components/lancer_dè';
+import Des from './components/lancer_de';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <Message />
-    <Dès />
+    <Des />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Dès extends Component {
+class Des extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -91,4 +91,4 @@ class Users extends React.Component{
 }
 
 
-export default Dès;
+export default Des;
