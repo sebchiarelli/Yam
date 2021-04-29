@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- babel => compilation du JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+        .heading {
+            color: purple;
+        }
+
+        .principal {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+  
+
+        class App extends React.Component {
+
+            all(){
+                const allNumbers = [];
+
+                for (let i = 1; i <= 100; i++) {
+                    
+                    allNumbers.push(i);
+                }
+                
+                return allNumbers;
+            }
+
+
+            render() {
+
+                const {allNumbers} = this.props;
+
+                const numbers = this.all();
+               
+                return (
+                    <div className="container">
+                        <h1>Number</h1>
+                        <ul>
+                            {(numbers.filter(num => i%2 === 0){} ) => <li key={i}>{num}</li>)}
+                        </ul>
+                    </div>
+                )
+            }
+        }
+        
+        ReactDOM.render(
+            <App odd={false} even={true} />,
+            document.getElementById('root')
+        );
+       
+
+    </script>
+</body>
+
+</html>
