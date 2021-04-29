@@ -2,14 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Message from './components/message';
-import Des from './components/lancer_de';
+import Rolls from './components/rolls';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Message />
-    <Des />
+    <Rolls />
   </React.StrictMode>,
   document.getElementById('root')
 );
